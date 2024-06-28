@@ -52,20 +52,57 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Remote Sensing</h1>
-							<p>
+							<h1>Remote Sensing - Land Cover Classification</h1>
+							<p>This page showcases different land classification techniques, illustrated through detailed screenshots. 
+							These methods are essential for analyzing and categorizing land cover, offering unique insights into various landscapes. 
+							Here, you'll find examples of four distinct classification types: Unsupervised Pixel-Based, Unsupervised Object-Based, Supervised Object-Based, and NDVI. 
+							Additionally, an overview of spectral data is provided to give context to these classifications.
+							All these maps were made using Sentinel satalite data that was processed in Arc GIS Pro.
 							</p>
-							<h4>tit</h4>
-							<span class="image main"><img src="images/plantane_map.png" alt="" /></span>
-							<span class="image main"><img src="images/plantane_map.png" alt="" /></span>
-							<span class="image main"><img src="images/plantane_map.png" alt="" /></span>
-							<span class="image main"><img src="images/plantane_map.png" alt="" /></span>
-							<p>
+							<h3>Spectral Data:</h3>
+							<p>Spectral data is used in remote sensing and land classification. 
+							It involves capturing and analyzing the electromagnetic spectrum reflected or emitted by objects on the Earth's surface. 
+							Satellite and aerial sensors capture data across various spectral bands, such as visible light (red, green, blue), near-infrared, and shortwave infrared. 
+							Each spectral band provides different information about the surface.
+							Different materials reflect and absorb different wavelengths of light, creating unique spectral signatures that can be used to identify and classify land cover types.
+							Each type of land cover, such as water, vegetation, and urban areas, has a distinct spectral signature. 
+							By analyzing these signatures, we can classify and map different land cover types.
+							See here an example of the variablity of spectral profiles:
 							</p>
-							
-							<h2>Creating the Maps:</h2>
-							<p> bla
+							<span class="image main"><img src="images/z_spectra.png" alt="" /></span>
+							<h3>Unsupervised Pixel-Based Classification:</h3>
+							<p>This method groups individual pixels into clusters based on their spectral properties without using any prior training data, the program runs itself. 
+								<b>Advantages:</b>
+							Quick and easy to implement, requires no training data, and can reveal natural groupings in the data.
 							</p>
+							<span class="image main"><img src="images/z_unsup_pix.png" alt="" /></span>
+							<h3>Unsupervised Object-Based Classification:</h3>
+							<p>This technique first segments the image into meaningful objects or segments, then classifies these segments based on their spectral and spatial properties. 
+							Again, without using any prior data training.
+								<b>Advantages:</b>
+							Reduces the grainy effect seen in pixel-based methods and captures spatial patterns and object shapes.Quick and easy to implement, requires no training data, and can reveal natural groupings in the data.
+							</p>
+							<span class="image main"><img src="images/z_unsup_obj.png" alt="" /></span>
+							<h3>Supervised Object-Based Classification:</h3>
+							<p>Combines object-based segmentation with supervised learning, using labeled training data to classify the segmented objects. 
+							In this case the training was done manually, using several training points.
+								<b>Advantages:</b>
+							High accuracy due to the use of training data and spatial context, producing more visually coherent maps.	
+							</p>
+							<span class="image main"><img src="images/z_sup_obj.png" alt="" /></span>
+							<h3>Normalized Difference Vegetation Index (<a href="GEE.html">NDVI</a>):</h3>
+							<p>NDVI is a widely-used index that measures vegetation health and density using remote sensing data. 
+								<b>Advantages:</b>
+							Provides a clear and effective measure of vegetation density, useful for both environmental monitoring and agricultural assessments.							
+							</p>
+							<span class="image main"><img src="images/z_ndvi.png" alt="" /></span>
+							<h3>Consideration:</h3>
+							<p>The supervised pixel based classification works best in my opinion. 
+							This type generated the most accurate results compared to unsupervised classification and was more precise than the object-based classification. 
+							Pixel-beased sometimes defines small areas as different types, which makes the map appear busier. In comparison, object based chooses more logical boundaries. 
+							Supervised classification gives more control over the categories and their reference spectral value than unsupervised giving a more accurate result. 
+							NDVI shows a more graduated map; therefore making it quite unclear what the boundaries are. This map is also different as the land is not grouped by cover type but rather just vegetation cover. 
+							</p>	
 						</div>
 					</div>
 
