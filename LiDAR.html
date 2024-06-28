@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>LiDAR - Barthe Los</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/uu_logo.png" alt="" /></span><span class="title">Barthe Los</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="choropleth.html">Choropleth</a></li>
+							<li><a href="vector.html">Vector</a></li>
+							<li><a href="RS.html">Remote Sensing</a></li>
+							<li><a href="REM.html">Relative Elevation Model</a></li>
+							<li><a href="GEE.html">Google Earth Engine</a></li>
+							<li><a href="LiDAR.html">LiDAR</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>LiDAR map</h1>
+							<p>This interactive LiDAR map presents a detailed 2.5D visualization of Eindhoven, offering an immersive experience that highlights the city's topography and structural features.
+							</p>
+							<iframe src="https://www.arcgis.com/home/webscene/viewer.html?layers=52a7f2dac031477fb52edfe70dfec18c&viewpoint=cam:161500.13209757,380636.15566313,2105.396,28992;0,50" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<p></p>
+							<h3>About LiDAR:</h3>
+							<p>Light Detection and Ranging (LiDAR) is a remote sensing method that uses laser light to measure distances to the Earth's surface. 
+							By emitting laser pulses and measuring the time it takes for them to return, LiDAR generates precise, high-resolution 3D information about the shape and structure of the surface and its features.
+							</p>
+							<p>This LiDAR map of Eindhoven is a testament to the capabilities of advanced GIS and remote sensing technologies. 
+							It not only serves as an educational tool but also as a practical resource for professionals in urban planning, architecture, and environmental science. 
+							</p>
+							<p> The LiDAR imagery can be represented in different ways.
+							In my featured map I decided on height as the main symbology.
+							Alternatively, it is possible to use classification as the symbology type. 
+							Then each LiDAR point is assigned a class based on its function. 
+							Although this symbology is useful, the LiDAR imagery is not always categorized into the right funtion, therefore the representation can be misleading. 
+							</p>
+							<p>See here a screenshot of the LiDAR map using classification as symbology type: (the colors are meant to best represent each category)
+							<span class="image main"><img src="images/lidar_clas.png" alt="" /></span>
+							<h3>Analyses:</h3>
+									<div class="row gtr-uniform">
+											<div class="col-4"><span class="image fit"><img src="images/lidar_height.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/lidar_cross.png" alt="" /></span></div>
+									</div>
+							<p>
+							LiDAR imagery can be used to several different ends. 
+							Take for example the measuring of a certain feature such as a building. 
+							Arc GIS Pro software is able to measure the difference in height between two LiDAR points, when navigating to a horizontal view. 
+							See the image on the left hand side for an example, where the height of a building was measured.
+							Additionally, it is possible to make a crosssection of LiDAR points. 
+							This can be used to find the elevation profile of a certain area or to obtain the facade of a building (if carefully executed). 
+							See the righyhand screenshot for an example of this. 
+							</p>
+							<h3>Links:</h3>
+											<ul>
+												<li>Find the publicly available LiDAR data <a href="https://geotiles.citg.tudelft.nl/">here</a>.</li>
+												<li>Go to the LiDAR map of Eindhoven separately <a href="https://www.arcgis.com/home/webscene/viewer.html?layers=52a7f2dac031477fb52edfe70dfec18c&viewpoint=cam:161500.13209757,380636.15566313,2105.396,28992;0,50">here</a>.</li>
+											</ul>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/barthe-los-773a8121b/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/losbarthe/losbarthe.github.io" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>	
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

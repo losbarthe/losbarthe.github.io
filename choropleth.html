@@ -40,10 +40,12 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="choropleth.html">Choropleth</a></li>
+							<li><a href="vector.html">Vector</a></li>
+							<li><a href="RS.html">Remote Sensing</a></li>
+							<li><a href="REM.html">Relative Elevation Model</a></li>
+							<li><a href="GEE.html">Google Earth Engine</a></li>
+							<li><a href="LiDAR.html">LiDAR</a></li>
 						</ul>
 					</nav>
 
@@ -55,10 +57,26 @@
 							This can be compared to SDG indicator 3.1.2 (on the right) found in the ESRI-online database. 
 							Indicator 11.1.1 depicts the proportion of urban populations living in slums, while indicator 3.1.2 shows the percentage of women of childbearing age within 2 hours of a health facility. 
 							When clicking on specific regions, a popup depicts the value of the indicator for that specific region. </p>
-						<iframe src="https://uni-utrecht.maps.arcgis.com/apps/Compare/index.html?appid=1fed251b78e34024a902789e0d4040f5" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
-							<p>explaining choropleth in general...</p>
-							<p>introducing the image with equal area</p>
+						<iframe src="https://uni-utrecht.maps.arcgis.com/apps/Compare/index.html?appid=1fed251b78e34024a902789e0d4040f5" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<p>A choropleth map is a thematic map that uses differences in coloring/shading within predefined areas to represent the average values of a particular quantity in those areas. 
+							It visually communicates data patterns and trends over geographic regions, making it easier to compare different areas at a glance. 
+							Choropleth maps are valuable tools for spatial analysis and decision-making.
+							In designing choropleth maps, the color scheme should be chosen to best represent the information presented and convey the intended message and the amount of classes should not exceed 5 so as to keep the information digestable. 
+							This style of map is useful as it is rather common and therefore more easily and uniformly interpreted. 							
+							</p>
+							<p>Another consideration is the projection used in mapping. 
+							Although coropleth maps are very useful, the prominence of areas is largely correlated to the area these regions take up on the map. 
+							Below you can find an image of an equal area projection map of the same data represented above. 
+							</p>
 							<span class="image main"><img src="images/choropleth_map.png" alt="" /></span>
+							<p>While this equal area projection is useful in depicting all regions equally in area this type of map is not able to adequately show data for smaller regions. 
+							In that case, consider a graduated symbol map, which gives each area a different sized symbol (based on the value of that indicator in that region) no matter the size of the region itself. 
+							</p>
+							<h3>Links: </h3>
+											<ul>
+												<li>Read more about the SDG's here <a href="https://sdgs.un.org/goals"> here </a> . </li>
+												<li>Find all the SDG indicator data <a href="https://unstats-undesa.opendata.arcgis.com/"> here </a>.</li>
+											</ul>
 						</div>
 					</div>
 
@@ -68,9 +86,8 @@
 							<section>
 								<h2>Follow</h2>
 								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>	
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.linkedin.com/in/barthe-los-773a8121b/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/losbarthe/losbarthe.github.io" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>	
 								</ul>
 							</section>
 							<ul class="copyright">

@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>REM - Barthe Los</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/uu_logo.png" alt="" /></span><span class="title">Barthe Los</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="choropleth.html">Choropleth</a></li>
+							<li><a href="vector.html">Vector</a></li>
+							<li><a href="RS.html">Remote Sensing</a></li>
+							<li><a href="REM.html">Relative Elevation Model</a></li>
+							<li><a href="GEE.html">Google Earth Engine</a></li>
+							<li><a href="LiDAR.html">LiDAR</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Relative Elevation Model</h1>
+							In this map, the relative elevation of the area surrounding the Dommel river in the Eindhoven region is depicted. It is presented as a stand alone poster format: 
+							<span class="image main"><img src="images/REM_dommel.png" alt="" /></span>
+							<p> The elevation depicted is relative to the height of the riverbanks locally. Adittionally, here view a zoomed in map of the city centre: 
+							</p>
+							<span class="image main"><img src="images/REM_dommel_zoomed.png" alt="" /></span>
+							<h2>Creating the Map:</h2>
+							<p> Initially, it was key to decide on a target area and look for recent LiDAR data as a Digital Terrain Model (DTM) for this region. 
+							For this, I chose the region I'm from, Eindhoven, as this gave me some prior knowledge on the area and its river, the Dommel.
+							After transferring the data to QGIS and merging the tiles, who's information was stored in separate files, it was important to apply a relevant color scheme. 
+							I chose this blue color scheme for its clarity and obvious thematic relevance whilst mapping water. 
+							After that, we made a cross-section layer, spanning the width of the rivers sussroundings, and applied a TIN interpolation, creating a new surface of our DTM using the triangulation method. 
+							We then subtracted this interpolated DTM layer off of the initial merged layer (Digital Elevation Model) to get the final Relative Elevation Model (REM) layer as a result. 
+							This realative elevation layer shows the height of the rivers surroundings compared to the river itself, thereby giving insights on flooding patterns and historic flow of the river. 
+							Applying an overlay of hill shading and a DSM layer gave us a more refined image as the final product. 
+							These added nuances were set to show starting at a certain zoom into the picture so as not to overcrowd the overall map (see the difference between the two above). 
+							The final posters were created by printing the maps and further stylizing them. The main focus here was to figure out a suitable layout. 
+							</p>
+							<h2> The history of the Laak stream </h2>
+							<div class="box alt">
+										<div class="row gtr-uniform">
+										<div class="col-4"><span class="image fit"><img src="images/REM_dommel_zoomed.png" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/lakerloop.jpg" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/fazantlaan_img.jpg" alt="" /></span></div>
+							</div>
+							<p>
+							'De Laak' was a stream that used to run east of Eindhovens city center (see middle image above).  
+							The small stream ran through, what was at the time, an area between two towns. 
+							In the 1900's, with the development of the area the stream was rerouted to run through the main dommel river. 
+							Now houses stand where there was once a stream (see top right image).
+							To this day the relative elevation in the area shows this history. 
+							</p>
+							<h3>Links:</h3>
+											<ul>
+												<li>Find the publicly available LiDAR data <a href="https://geotiles.citg.tudelft.nl/">here</a>.</li>
+												<li>Read more about the Laak stream and its history <a href="https://fransvanbeers.notion.site/de-Laak-Lakerloop-in-Eindhoven-f88716828f6649768d66aaae3d5783d4">here</a> (in dutch).</li>
+											</ul>
+						</div>
+			</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/barthe-los-773a8121b/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/losbarthe/losbarthe.github.io" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>	
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

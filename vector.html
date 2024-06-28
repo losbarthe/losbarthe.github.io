@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Vector - Barthe Los</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/uu_logo.png" alt="" /></span><span class="title">Barthe Los</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="choropleth.html">Choropleth</a></li>
+							<li><a href="vector.html">Vector</a></li>
+							<li><a href="RS.html">Remote Sensing</a></li>
+							<li><a href="REM.html">Relative Elevation Model</a></li>
+							<li><a href="GEE.html">Google Earth Engine</a></li>
+							<li><a href="LiDAR.html">LiDAR</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Vector maps</h1>
+							<p>Arc GIS Pro gives you the ability to use many hosted feature layers. 
+							In this section a few maps that were made using the Utrecht hosted feature layer of trees are displayed. 
+							The data encompasses all trees planted by the Utrecht municipality. 
+							A rare set of detailed vector data that is publicly available. 
+							Let's have a look at what these data can tell us. 
+							</p>
+							<h4>Plantane filter:</h4>
+							<span class="image main"><img src="images/plantane_map.png" alt="" /></span>
+							<p>In this first map I was able to filter out one specific tree type: the plantane. 
+							As you can see, there are not that many plantane's placed in Utrechts public areas. 
+							</p>
+							<h4>Tree distribution - choropleth:</h4>
+							<span class="image main"><img src="images/trees_gen.png" alt="" /></span>
+							<p>Now taking a look at the general distibution of trees in Utrecht.
+							For this I used a <a href="choropleth.html">coropleth map</a> showing the amount of trees per 'wijk' (neighbourhood). 
+							However, you can see that the different regions vary quite a lot in size. 
+							So, this map (below) showing the number of trees per area is a better indicator for how rich in trees you would judge each region. 
+							</p>
+							<span class="image main"><img src="images/trees_area.png" alt="" /></span>
+							<h4>Kernel density: </h4>
+							<p>To better understand the distribution of the trees, a kernel density map can be made. 
+							This shows where most of the trees are concentrated. 
+							</p>
+							<span class="image main"><img src="images/kernel_den.png" alt="" /></span>
+							<p> Kernel Density is defined as calculating the density of point features around each output raster cell. 
+							Conceptually, a smoothly curved surface is fitted over each point.
+							</p>
+							<h2>Creating the Maps:</h2>
+							<p> All the above maps were created in Arc GIS Pro, mainly using simple analyses. 
+							These maps made for a good exercise to get to know Arc GIS Pro and all its ablities. 
+							</p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/barthe-los-773a8121b/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/losbarthe/losbarthe.github.io" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>	
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

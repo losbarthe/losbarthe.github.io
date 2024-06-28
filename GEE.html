@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>GEE - Barthe Los</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/uu_logo.png" alt="" /></span><span class="title">Barthe Los</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="choropleth.html">Choropleth</a></li>
+							<li><a href="vector.html">Vector</a></li>
+							<li><a href="RS.html">Remote Sensing</a></li>
+							<li><a href="REM.html">Relative Elevation Model</a></li>
+							<li><a href="GEE.html">Google Earth Engine</a></li>
+							<li><a href="LiDAR.html">LiDAR</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Google Earth Engine - NDVI Map</h1>
+							<p>This simple interactive map, created using Google Earth Engine, focuses on the Normalized Difference Vegetation Index (NDVI) in Central New Zealand. 
+							NDVI is a crucial metric for understanding vegetation health, vigor, and density, providing insights into environmental conditions and land use practices. 
+							Navigate the map by zooming in on specific areas and toggle the settings of the background map. </p>
+							<h3>About NDVI:</h3>
+							<p>The Normalized Difference Vegetation Index (NDVI) is a widely-used remote sensing index that measures and monitors plant health and density using satellite imagery. 
+							It calculates the difference between near-infrared (which vegetation strongly reflects) and red light (which vegetation absorbs) to determine the presence and condition of vegetation.
+							</p>
+						<iframe src="https://ee-losbarthe04.projects.earthengine.app/view/ndvinewzealand" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
+							<p> If the web app does not work, find it externally <a href="https://ee-losbarthe04.projects.earthengine.app/view/ndvinewzealand">here</a>.</p>
+							<p>When looking at the map the main contrasting regoin is the mountain range. 
+							Here we can see a relatively low NDVI value as the mountains are probably too high for much vegetation to grow.
+							Another interesting area is Christchurch (southwest in our region of interest). This, being one of New-Zealands main cities on the southern isand, has a surprisingly high NDVI value. </p>
+							<h3>Creating the Map:</h3>
+							<p>To create this map remote sensing NDVI data was uploaded into Google Earth Engine. Additionally, a polygon shapefile of the region of interest was made and uploaded.
+							After this a simple script to generate the NDVI imagery was coded in JavaScript. Here, the data was filtered to select non-cloudy, summer imagery to best capture the NDVI potential of the region. 
+							Adding the script for a legend made this simple interactive map ready to be pblished.
+							</p>
+							<p>Possible extentions of this projects could be to add another vegitation index for comparison or allowing the user to manually adjust the temporal range. For the purposes of this project I have kept the app in its simple form. </p>
+							<h3>Links:</h3>
+											<ul>
+												<li>Navigate to Google Earth Engine <a href="https://code.earthengine.google.com/">here</a>.</li>
+												<li>Find the publicly available NDVI dataset <a href="https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD13Q1">here</a>.</li>
+												<li>Create your own polygon shapefile <a href="https://geojson.io/#map=6.93/-43.142/171.473">here</a>.</li>
+												<li>A simple tutorial on how to make an NDVI map in GEE can be found <a href="https://www.youtube.com/watch?v=2_FyMW5rCm0&t=608s">here</a>.</li>
+											</ul>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/barthe-los-773a8121b/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/losbarthe/losbarthe.github.io" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>	
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
